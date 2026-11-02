@@ -110,3 +110,6 @@ install-debian:
 .PHONY: webfonts
 webfonts:
 	$(MAKE) -C $(FONTDIR) webfonts
+
+check-config:
+	python3 scripts/check-config.py
